@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Invoice Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <h1>Invoice creator</h1>
+          <p>Thanks for choosing GoodCorp, LLC!</p>
+        </div>
+        <div class="card-body">
+          <div class="button-group">
+            <button data-btn="wash-car" class="btn-secondary">
+              Wash Car: $10
+            </button>
+            <button data-btn="mow-lawn" class="btn-secondary">
+              Mow Lawn: $20
+            </button>
+            <button data-btn="pull-weeds" class="btn-secondary">
+              Pull Weeds: $30
+            </button>
+          </div>
+          <table id="cart">
+            <tr class="t-head">
+              <th>TASK</th>
+              <th>TOTAL</th>
+            </tr>
+          </table>
+          <div class="underline"></div>
+          <table class="output">
+            <tr class="t-head">
+              <th>NOTES</th>
+              <th>TOTAL AMOUNT</th>
+            </tr>
+            <tr id="total-amt" class="t-body"></tr>
+          </table>
+          <button data-btn="btn-send" class="btn-primary">Send Invoice</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>

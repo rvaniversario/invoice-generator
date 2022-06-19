@@ -1,0 +1,135 @@
+:root {
+  --primary-color: hsl(215, 28%, 17%);
+  --secondary-color: hsl(221, 63%, 53%);
+  --white-color: hsl(0, 0%, 100%);
+  --gray-400: hsl(235, 61%, 89%);
+  --gray-300: hsl(255, 5%, 84%);
+  --gray-200: hsl(232, 25%, 81%);
+  --font: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--gray-400);
+  color: var(--white-color);
+  width: 100vw;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  border: transparent;
+}
+
+table {
+  width: 100%;
+}
+
+tr {
+  display: flex;
+  justify-content: space-between;
+}
+
+th {
+  height: 2.5rem;
+}
+
+td {
+  height: 2.5rem;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.card {
+  background: var(--primary-color);
+  width: 30rem;
+  height: fit-content;
+}
+
+.card-header {
+  background: var(--secondary-color);
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.underline {
+  background: var(--gray-400);
+  height: 1px;
+  width: 100%;
+  margin: 0 0 1.2rem;
+}
+
+#cart {
+  height: 10.5rem;
+}
+
+.output {
+  height: 5.25rem;
+}
+
+.t-head th {
+  color: var(--gray-300);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.notes {
+  font-size: 0.75rem;
+}
+
+/* Buttons */
+.btn-secondary {
+  font-family: var(--font);
+  font-size: 0.875rem;
+  font-weight: 500;
+  background: var(--gray-400);
+  border-radius: 0.25rem;
+  width: fit-content;
+  padding: 0.75rem 1rem;
+}
+
+.btn-primary {
+  background: var(--secondary-color);
+  color: var(--white-color);
+  font-family: var(--font);
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 0.25rem;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 0.75rem 1rem;
+}
+
+.btn-remove {
+  font-size: 0.5rem;
+  color: var(--gray-400);
+  margin-left: 2rem;
+}
+/* End of Buttons */
